@@ -177,19 +177,10 @@ hds <- res2$HDS_p_value
 hds_sim <- t(res2$HDS_simulated_p_value)
 bc <- t(res2$BC)
 
-# Fit Gaussian unimodal or bimodal distributions and test with AIC
-aic_diff <- c()
-for(i in seq(from=1,to=ncol(data))){
-  fit_unimodal <- Mclust(data[,i],G=1,model="V")
-  fit_bimodal <- Mclust(data[,i],G=2,model="V")
-  aic_diff[i] <- AIC(fit_unimodal) - AIC(fit_bimodal)
-}
-
 stat <- bc*(1-hds_sim)
 stat <- as.data.frame(stat)
 stat$bc <- bc[,1]
 stat$hds_sim <- hds_sim[,1]
-stat$aic <- tanh(scale(aic_diff))
 names <- rownames(stat)
 stat$name <- str_replace_all(names,"_"," ")
 colnames(stat) <- c("composite","bc","hds_sim","aic","names")
