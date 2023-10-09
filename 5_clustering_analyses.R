@@ -125,12 +125,24 @@ cormat_clips <- cor(data_clips)
 cormat_movie <- cormat_movie[colnames(m_clips),colnames(m_clips)]
 cormat_clips <- cormat_clips[colnames(m_clips),colnames(m_clips)]
 
+#Select the lower triangle for correlation calculation
+lower_idx_movie <- lower.tri(cormat_movie)
+lower_idx_clips <- lower.tri(cormat_clips)
+lower_triangle_movie <- cormat_movie[lower_idx_movie]
+lower_triangle_clips <- cormat_clips[lower_idx_clips]
+
 # Mantel test, correlation matrices
-r_correlation <-  cor(as.vector(cormat_clips), as.vector(cormat_movie))
+r_correlation <-  cor(as.vector(lower_triangle_clips), as.vector(lower_triangle_movie))
 test_cormat <- mantel.test(cormat_clips,cormat_movie,nperm = 1000000, graph = T,alternative = "greater")
 
+#Select the lower triangle for correlation calculation
+lower_idx_movie <- lower.tri(m_movie)
+lower_idx_clips <- lower.tri(m_clips)
+lower_triangle_movie <- m_movie[lower_idx_movie]
+lower_triangle_clips <- m_clips[lower_idx_clips]
+
 # Test the correlation between consensus matrices
-r_consensus <-  cor(as.vector(m_clips), as.vector(m_movie))
+r_consensus <-  cor(as.vector(lower_triangle_clips), as.vector(lower_triangle_movie))
 test_consensus <- mantel.test(m_clips,m_movie,nperm = 1000000, graph = T,alternative = "greater")
 
 # Save results
