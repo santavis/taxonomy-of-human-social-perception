@@ -4,5 +4,3 @@ This repository contains anonymized perceptual  rating data of social features f
 The results of the publication can be replicated by running the provided analysis scripts in the numbered order.
 
 The scripts and anonymized data are freely available to use. Please, cite the publcation (https://www.biorxiv.org/content/10.1101/2023.09.28.559888v1) if you use these script or data.
-
-Severi Santavirta, 28th of September, 2023
