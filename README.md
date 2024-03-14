@@ -3,11 +3,11 @@ This repository contains anonymized perceptual rating data of social features fr
 
 Explore the social perceptual space in 3D with the following links:
 
-https://santavis.github.io/taxonomy-of-human-social-perception/social_perceptual_space_3D/social_perceptual_space_comp1-comp3.html
+https://santavis.github.io/taxonomy-of-human-social-perception/Media_social_perceptual_space_3D/social_perceptual_space_comp1-comp3.html
 
-https://santavis.github.io/taxonomy-of-human-social-perception/social_perceptual_space_3D/social_perceptual_space_comp4-comp6.html
+https://santavis.github.io/taxonomy-of-human-social-perception/Media_social_perceptual_space_3D/social_perceptual_space_comp4-comp6.html
 
-https://santavis.github.io/taxonomy-of-human-social-perception/social_perceptual_space_3D/social_perceptual_space_comp7-comp9.html
+https://santavis.github.io/taxonomy-of-human-social-perception/Media_social_perceptual_space_3D/social_perceptual_space_comp7-comp9.html
 
 The results of the publication can be replicated by running the provided analysis scripts in the numbered order.
 
