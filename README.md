@@ -9,6 +9,6 @@ https://santavis.github.io/taxonomy-of-human-social-perception/Media_social_perc
 
 https://santavis.github.io/taxonomy-of-human-social-perception/Media_social_perceptual_space_3D/social_perceptual_space_comp7-comp9.html
 
-The results of the publication can be replicated by running the provided analysis scripts in the numbered order.
+The results of the publication can be reproduced by running the provided analysis scripts in the numbered order.
 
 The scripts and anonymized data are freely available to use. Please, cite the publication (link when published) if you use these script or data.
