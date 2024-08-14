@@ -1,5 +1,5 @@
 # Taxonomy of human social perception
-This repository contains anonymized perceptual rating data of social features from movies and the analysis scripts used in the publication "Taxonomy of human social perception" (submitted). The publication describes how people perceive social features from natural scenes. The study investigates i) whether social perception is binary (feature is perceived either present or absent) or continuous (feature is perceived with varying intensity), ii) how consistently people perceive different social features and iii) what are the main perceptual dimensions people perceive from social scenes.
+This repository contains anonymized perceptual rating data of social features from movies and the analysis scripts used in the publication "Taxonomy of human social perception" (to be published in Journal of Personality an social Psychology, accepted on the 7.7.2024). The publication describes how people perceive social features from natural scenes. The study investigates i) whether social perception is binary (feature is perceived either present or absent) or continuous (feature is perceived with varying intensity), ii) how consistently people perceive different social features and iii) what are the main perceptual dimensions people perceive from social scenes.
 
 Explore the social perceptual space in 3D with the following links:
 
